@@ -4,7 +4,8 @@
     <product-form 
       @save-product="addProduct" 
       :model="model" 
-      :manufacturers="manufacturers">
+      :manufacturers="manufacturers"
+      :isEditing = true>
     </product-form>
   </div>
 </template>

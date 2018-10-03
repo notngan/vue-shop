@@ -131,10 +131,10 @@ input, select, textarea, button {
 }
 button {
     float: left;
-    background: #42b983;
+    background: #2c3e50;
     border-radius: 5px;
   span { 
-    color: #2c3e50;
+    color: #fff;
     text-align: center;
   }
 }
