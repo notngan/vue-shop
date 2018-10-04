@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 // configure Vue with Vuex
 Vue.use(Vuex)
 import { productGetters, manufacturerGetters } from './getters'
-
+import { productMutations, cartMutations, manufacturerMutations } from './mutations'
 
 // create state
 export default new Vuex.Store({
@@ -22,5 +22,7 @@ export default new Vuex.Store({
     },
 
     // GETTERS
-    getters: Object.assign({}, productGetters, manufacturerGetters)
+    getters: Object.assign({}, productGetters, manufacturerGetters),
+    //MUTATIONS
+    mutations: Object.assign({}, productMutations, cartMutations, manufacturerMutations),
 })
