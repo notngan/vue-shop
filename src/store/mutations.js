@@ -36,7 +36,7 @@ import {
       // Updates state product
       state.product = payload
     },
-    [ADD_PRODUCT]: (state, payload) => {
+    [ADD_PRODUCT]: (state) => {
       // ...Same pattern
       state.showLoader = true
     },
@@ -44,7 +44,7 @@ import {
       state.showLoader = false
       state.products.push(payload)
     },
-    [UPDATE_PRODUCT]: (state, payload) => {
+    [UPDATE_PRODUCT]: (state) => {
       state.showLoader = true
     },
     [UPDATE_PRODUCT_SUCCESS]: (state, payload) => {
@@ -57,7 +57,7 @@ import {
         return p
       })
     },
-    [REMOVE_PRODUCT]: (state, payload) => {
+    [REMOVE_PRODUCT]: (state) => {
       state.showLoader = true
     },
     [REMOVE_PRODUCT_SUCCESS]: (state, payload) => {
